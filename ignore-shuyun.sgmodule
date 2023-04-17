@@ -1,0 +1,8 @@
+
+#!name=ignore shuyun.com
+#!desc= 解决 gitlab 403
+
+
+
+[General]
+skip-proxy = %APPEND% gitlab.shuyun.com
