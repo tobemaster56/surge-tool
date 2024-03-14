@@ -1,0 +1,10 @@
+#!name=claude
+#!desc= claude 单独选择
+
+
+
+# > Claude
+DOMAIN-SUFFIX,anthropic.com
+
+[Proxy Group]
+Claude = select,Proxies,HK,JP,SG,TW,US
