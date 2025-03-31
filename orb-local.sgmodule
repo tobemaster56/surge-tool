@@ -1,0 +1,8 @@
+
+#!name=orbstack local
+#!desc= 支持 orb local 
+
+
+
+[General]
+always-real-ip = %APPEND% *.orb.local
