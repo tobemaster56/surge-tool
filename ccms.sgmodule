@@ -1,9 +1,9 @@
-#!name=本地开发重定向 (CCMS to Localhost)
-#!desc=将 qa-qiushi6-ccms.shuyun.com 的请求重定向到 localhost:8005。
-
-[URL Rewrite]
-^https:\/\/qa-qiushi6-ccms\.shuyun\.com\/portal\/?(.*) http://localhost:8005/portal/$1 302
+#!name=QA Portal Local Proxy
+#!desc=Proxy qa-qiushi6-ccms.shuyun.com to localhost:8005
+#!author=Mark
 
 [MITM]
-# 需要开启 MITM 并信任 Surge CA 证书才能对 HTTPS 链接进行重写。
 hostname = qa-qiushi6-ccms.shuyun.com
+
+[Map Local]
+^https:\/\/qa-qiushi6-ccms\.shuyun\.com\/portal\/(.*) http://127.0.0.1:8005/portal/$1
